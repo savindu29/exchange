@@ -1,0 +1,32 @@
+<div class="main-outer">
+
+
+  <a class="drop-down" mat-icon-button [matMenuTriggerFor]="menu">
+    Profile
+  </a>
+  <span class="icons" mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>arrow_drop_down</mat-icon>
+  </span>
+
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+        <mat-icon>inventory_2</mat-icon>
+        <span>Orders</span>
+      </button>
+      <button mat-menu-item >
+        <mat-icon>person</mat-icon>
+        <span>My Account</span>
+      </button>
+
+    </mat-menu>
+
+
+
+
+
+  <a routerLink="/security/login">Login</a>
+  <button class="access-console-button" routerLink="/console/playground/product/new">
+    Access Control
+  </button>
+</div>
